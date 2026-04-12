@@ -791,3 +791,100 @@ body.dark #suporte textarea::placeholder {
   color: black;
 }
 
+
+
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* TELA INICIAL */
+  .elementodapagina {
+    padding: 20px;
+    height: auto;
+  }
+
+  .conteudo {
+    padding: 20px;
+  }
+
+  /* SOBRE O JOGO */
+  .elementosobre {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .elementosobre .texto {
+    width: 100%;
+  }
+
+  .imagem1 img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .imagem-controles img {
+    width: 100%;
+  }
+
+  /* PERSONA */
+  .persona {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .persona .texto {
+    width: 100%;
+    margin: 0;
+  }
+
+  .persona .imagem img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .persona .botaopersona {
+    margin: 0;
+  }
+
+  /* SUPORTE */
+  #suporte {
+    padding: 40px 20px;
+  }
+
+  #suporte input,
+  #suporte textarea {
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+}
