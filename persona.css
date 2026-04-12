@@ -1,0 +1,167 @@
+html{
+    scroll-behavior: smooth
+
+
+}
+
+
+
+
+
+header {
+    
+    background-color: #2d4770;
+    padding: 0px 10px;
+    border: 10px;
+    
+    border-bottom: 2px solid #1102e9;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+  
+    
+
+}
+
+
+/* LOGO ESQUERDA */
+.logo img {
+    width: 120px;
+
+
+}
+
+/* TÍTULO CENTRAL  */
+.titulo {
+    position: left;
+    padding: 20px;
+    left: 45%;
+    text-align: left;
+    color: white;
+    margin: 0;
+    font-family: Boldonse;
+    font-size: 45px;
+}
+
+/* MENU DIREITA */
+nav {
+    margin-left: auto;
+
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px;
+    margin: 30px;
+    font-family: Boldonse;
+
+}
+
+/* SUBLINHADO DOS BOTÕES DO MENU */
+nav ul li a:hover {
+    color: #1102e9;
+}
+
+
+
+.persona{
+
+    
+
+    
+    h2{
+        margin: auto;
+        text-align: center;
+     color: white;
+        font-family: Boldonse;
+        font-size: 35px;
+        padding: 10px;
+    }
+
+
+p{
+    
+    border-radius: 10px;
+    font-family: Bricolage Grotesque;
+    padding: 0px 10px;
+    color:white;
+    font-size: 20px;
+    padding: 30px;
+    text-align: left;
+    
+}
+
+.texto{
+width: 65%;
+}
+
+.imagem img {
+width: 550px;
+ 
+
+border-radius: 10px;
+border: 5px solid white;
+margin: 300px;
+}
+
+
+display: flex;              /* para ficar um do lado do outro*/
+align-items: center;        /* fica centrado */
+justify-content: space-between;
+background-color: #061b2c;
+text-align: center;
+ border-top: 1px solid #1102e9;
+ 
+
+
+
+
+
+}
+ body{
+    margin: 0;
+    padding: 0;
+ }
+
+
+
+
+@media (max-width: 480px) {
+  body {
+    background-color: black;
+  }
+
+  #game {
+    transform: scale(0.9);
+  }
+}
+
+
+
+
+
+
+
+

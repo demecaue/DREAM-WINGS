@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Wings</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- TÍTULOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+  <!-- PARÁGRAFOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <a href="#jogar">
+      <img src="img/logo.png">
+    </a>
+  </div>
+
+  <a href="#jogar" class="logo-titulo">
+    <h1 class="titulo">Dream Wings</h1>
+  </a>
+
+  <nav>
+    <ul>
+      <li><a href="#jogar">Jogar</a></li>
+      <li><a href="#sobreojogo">Sobre o jogo</a></li>
+      <li><a href="#persona">Persona</a></li>
+      <li><a href="#suporte">Suporte</a></li>
+    </ul>
+  </nav>
+
+  <button id="tema-btn" class="tema-btn">Modo escuro</button>
+</header>
+
+<!-- JOGAR -->
+<section id="jogar" class="elementodapagina">
+  <div class="conteudo">
+    <h2 style="font-family: Boldonse;">Bem-vindo ao Dream Wings</h2>
+    <p style="font-family: 'Bricolage Grotesque', sans-serif;">
+      Um menino sonhador que nunca desistiu de voar.
+    </p>
+    <button class="play-btn">▶ Jogar</button>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobreojogo" class="elementosobre">
+  <div class="texto">
+    <h2 style="font-family: Boldonse;">Sobre o Jogo</h2>
+
+    <p style="font-family: 'Bricolage Grotesque', sans-serif;">
+      Em Dream Wings, você assume o controle de um avião e precisa colocar suas habilidades à prova em um desafio
+      cheio de ação e reflexos rápidos.
+    </p>
+
+    <div class="imagem-controles">
+      <img src="img/Controles de jogo com setas.png">
+    </div>
+  </div>
+
+  <div class="imagem1">
+    <img src="img/screechot.PNG">
+  </div>
+
+  <div class="botaosobre">
+    <h2 style="font-family: Boldonse;">CLIQUE AQUI PARA</h2>
+    <button class="play-btn">▶ Jogar</button>
+  </div>
+</section>
+
+<!-- PERSONA -->
+<section id="persona" class="persona">
+  <div class="texto">
+    <h2 style="font-family: Boldonse;">Persona</h2>
+
+    
+        </h2>
+
+        <p>
+          Gabriel sempre foi apaixonado pelo céu, quando criança, passava horas olhando aviões cruzando as nuvens e
+          imaginando como seria estar lá em cima, controlando uma aeronave e viajando pelo mundo.
+          <br> </br>
+          Seu maior sonho era se tornar piloto de aeronaves, ele lia sobre aviões, assistia vídeos de decolagens e
+          pousos e
+          até decorava nomes de modelos e companhias aéreas.
+          <br> </br>
+          Mas Gabriel nasceu com uma deficiência física chamada espinha bífida, que o impediu de atender aos requisitos
+          médicos exigidos para ser piloto profissional, por um tempo, ele ficou triste, acreditando que nunca chegaria
+          perto dos céus,
+          até que algo mudou.
+
+          <br> </br>
+
+          Um dia, Gabriel descobriu o mundo do desenvolvimento de jogos e percebeu que podia criar universos inteiros no
+          computador,
+
+          então teve uma ideia: criar um jogo de aviação,
+
+          criar esse jogo não é apenas um projeto para Gabriel é a forma dele voar de um jeito diferente.
+
+          Mesmo que seus pés permaneçam no chão, sua mente e sua imaginação continuam nos céus. E, toda vez que alguém
+          joga
+          o jogo que ele criou e decola pela primeira vez, Gabriel sente que uma pequena parte do seu sonho também
+          decolou
+          junto.
+
+
+        </p>
+  </div>
+
+  <div class="imagem">
+    <img src="img/gabriel.png">
+  </div>
+
+  <div class="botaopersona">
+    <h2 style="font-family: Boldonse;">CLIQUE AQUI PARA</h2>
+    <button class="play-btn">▶ Jogar</button>
+  </div>
+</section>
+
+<!-- SUPORTE -->
+<section id="suporte">
+  <h2 style="font-family: Boldonse;">Suporte</h2>
+
+  <input type="text" placeholder="Seu nome">
+  <input type="email" placeholder="Seu email">
+  <textarea placeholder="Digite sua mensagem"></textarea>
+
+  <button type="button" onclick="mostrarOpcoes()">Enviar</button>
+
+  <div id="opcoes-email" style="display:none;">
+    <button onclick="abrirGmail()">Gmail</button>
+    <button onclick="abrirOutlook()">Outlook</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="img/logo.png">
+      <h2 style="font-family: Boldonse;">Dream Wings</h2>
+    </div>
+
+    <div class="footer-info">
+      <p style="font-family: 'Bricolage Grotesque', sans-serif;">Desenvolvido por Cauê</p>
+      <p style="font-family: 'Bricolage Grotesque', sans-serif;">© 2026 Dream Wings</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function mostrarOpcoes() {
+  document.getElementById("opcoes-email").style.display = "block";
+}
+
+function abrirGmail() {
+  window.location.href =
+    "https://mail.google.com/mail/?view=cm&to=suportedreamwings@gmail.com";
+}
+
+function abrirOutlook() {
+  window.location.href =
+    "https://outlook.live.com/mail/0/deeplink/compose?to=suportedreamwings@gmail.com";
+}
+
+const ANO_LANCAMENTO = 2026;
+  let anoAtual = new Date().getFullYear();
+
+  if (anoAtual == ANO_LANCAMENTO) {
+    alert("NOTÍCIA: Este jogo é um grande lançamento!");
+  }
+
+
+
+  
+  window.scrollTo(0, 0);
+
+let nome = prompt("Qual é o seu nome?");
+
+  // pede a idade
+  let idade = Number(prompt("Olá " + nome + ", qual é a sua idade?"));
+
+  // verificação
+  if (idade >= 10) {
+    alert("Acesso permitido. Bem-vindo, " + nome + "!");
+  } else {
+    alert("Acesso restrito, " + nome + "!");
+
+
+    
+    // borra o site
+    document.body.style.filter = "blur(8px)";
+    document.body.style.pointerEvents = "none";
+  }
+
+
+
+// modo escuro
+const botao = document.getElementById("tema-btn");
+
+botao.onclick = function () {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    botao.textContent = "Modo claro";
+  } else {
+    botao.textContent = "Modo escuro";
+  }
+};
+</script>
+
+</body>
+</html>

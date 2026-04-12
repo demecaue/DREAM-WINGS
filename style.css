@@ -1,0 +1,793 @@
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* começo do header */
+header {
+    background-color: #5fa8d3;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0px 10px;
+    margin: 0;
+    border: 10px;
+    margin: auto;
+   border-bottom: 5px solid #000566;
+
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+
+
+
+
+}
+
+
+
+
+/* LOGO ESQUERDA */
+.logo img {
+    width: 120px;
+
+
+}
+
+/* TÍTULO CENTRAL  */
+.titulo {
+    position: left;
+    padding: 20px;
+    left: 45%;
+    text-align: left;
+    color: #000;
+    margin: 0;
+    font-family: Boldonse;
+    font-size: 45px;
+   
+}
+
+/* MENU DIREITA */
+nav {
+    margin-left: auto;
+
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px;
+    margin: 30px;
+    font-family: Boldonse;
+
+}
+
+/* SUBLINHADO DOS BOTÕES DO MENU */
+nav ul li a:hover {
+    color: blue;
+}
+
+
+
+.logo-titulo {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* fim do header */
+
+
+body {
+    background-image: url(img/Jato\ de\ combate\ vermelho\ no\ céu.png);
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+background-color: #ffffff;
+    color: #000000; 
+
+
+
+
+}
+
+
+/*  começo da tela inteira */
+.elementodapagina {
+    height: 100vh;
+    /* ocupa a tela toda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+
+
+
+}
+/* fim da tela inteira */
+
+
+
+
+
+
+/*começo do quadrado*/
+
+.conteudo {
+  background: rgba(55, 56, 56, 0.5);/* fundo escuro transparente */
+    padding: 40px 10px;
+    border-radius: 15px;
+    border: 5px solid #000566;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+        h2{
+            font-family:  Boldonse;
+            color: #000;
+        }
+
+
+
+    p {
+        font-family: Bricolage Grotesque;
+        font-size: 15px;
+color: #000;
+    }
+
+
+
+}
+/*fim do quadrado*/
+
+
+
+
+
+/* começo do botão jogar */
+.play-btn {
+    margin-top: 20px;
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+ background-color: #0b5ed7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+ 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+      animation: piscar 1s infinite;
+     color: white;
+
+    
+
+
+
+
+}
+
+@keyframes piscar {
+    0% { opacity: 2; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0,5; }
+}
+
+
+
+/* EFEITO HOVER BOTÃO */
+.play-btn:hover {
+     background-color: #084298;
+    transform: scale(1.1);
+    
+}
+
+/*fim do botão jogar*/
+
+
+
+
+
+
+
+
+
+/*começo do sobre o jogo*/
+
+.elementosobre {
+background-color: #5fa8d3;
+
+    .botaosobre {
+
+
+        margin-top: 20px;
+        padding: 20px 50px;
+        font-size: 24px;
+        font-weight: bold;
+   
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+
+
+    }
+
+    /* EFEITO HOVER BOTÃO */
+    .play-btn:hover {
+      background-color: #084298;
+    transform: scale(1.1);
+    }
+
+
+
+
+
+
+
+
+
+    h2 {
+        margin: auto;
+        text-align: center;
+        color: black;
+        font-family: Boldonse;
+        font-size: 35px;
+        padding: 10px;
+    }
+
+
+    p {
+
+        border-radius: 10px;
+        font-family: Bricolage Grotesque;
+        padding: 0px 10px;
+        color: black;
+        font-size: 20px;
+        padding: 30px;
+
+   
+    }
+
+    
+.imagem-controles img{
+    width: 70%;
+  text-align: left;
+  
+}
+
+
+
+
+
+
+
+    .texto {
+        width: 65%;
+    }
+
+    .imagem1 img {
+        width: 300px;
+        border-radius: 10px;
+         border: 5px solid black;
+        margin: 60px 100px;
+        padding: 0px 0px;
+        align-items: top;
+    }
+
+
+    display: flex;
+       align-items: top;
+    padding: 135px;
+    justify-content: space-between;
+  
+    text-align: center;
+      border-top: 5px solid #000566;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+}
+
+/*fim do sobre o jogo*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*começo do footer*/
+
+.footer {
+    width: 100%;
+  background-color: #5fa8d3;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 0;
+   border-top: 5px solid #000566;
+
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer-logo h2 {
+    font-size: 22px;
+    color: black
+}
+
+.footer-info {
+    text-align: right;
+    font-size: 14px;
+    opacity: 0.8;
+    color: #000;
+}
+
+
+/*fim do footer*/
+
+
+
+
+/*começo da persona*/
+.persona {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 135px;
+    background-color: #5fa8d3;
+    text-align: center;
+
+    border-top: 5px solid #000566;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* TEXTO (ESQUERDA) */
+.persona .texto {
+    width: 60%;
+    margin-left: -100px;
+    margin-right: 100px;
+}
+
+.persona .texto h2 {
+    text-align: left;
+    color: black;
+    font-family: Boldonse;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.persona .texto p {
+    text-align: left;
+    font-family: Bricolage Grotesque;
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* IMAGEM (MEIO) */
+.persona .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.persona .imagem img {
+    width: 480px; /* maior */
+    max-width: 100%;
+    border-radius: 10px;
+    border: 5px solid black;
+    margin: 0 40px;
+    
+    margin-top: 200px;
+}
+
+/*botao de jogar*/
+.persona .botaopersona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* TEXTO DO BOTÃO */
+.persona .botaopersona h2 {
+    color: black;
+    font-family: Boldonse;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* BOTÃO */
+.persona .play-btn {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+
+   
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+ background-color: #0b5ed7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* HOVER */
+.persona .play-btn:hover {
+    background-color: #084298;
+    transform: scale(1.1);
+}
+
+
+/*fim da persona*/
+
+
+
+
+
+
+
+
+
+#suporte {
+    
+  background-color: #5fa8d3;
+  
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 20px; /* ajusta se quiser menos espaço */
+border-top: 5px solid #000566;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+  
+}
+
+#suporte h2 {
+     font-family: Boldonse;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: black;
+  margin-top: 120px
+}
+
+#suporte form {
+    
+  max-width: 500px;
+  margin: 0 auto;
+  
+  
+}
+
+#suporte input,
+#suporte textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  
+   
+
+}
+
+
+#suporte input[type="text"],
+#suporte input[type="email"],
+#suporte textarea {
+  color: white;
+  background-color: black;
+  
+}
+
+#suporte textarea {
+  
+  height: 120px;
+  color: white;
+  background-color: black;
+}
+
+#suporte button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000566;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#suporte button:hover {
+  background-color: #000566;
+  transform: scale(1.05);
+}
+
+#opcoes-email {
+  margin-top: 10px;
+}
+
+#opcoes-email button {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MODO ESCURO*/
+.tema-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tema-btn:hover {
+  transform: scale(1.05);
+}
+
+/* quando estiver no modo escuro */
+body.dark .tema-btn {
+  background: #fff;
+  color: #000;
+
+}
+
+
+body.dark {
+    background-color: #020c1b;
+    color: white;
+    background-image: url(img/Jato\ vermelho\ no\ céu\ estrelado.png);
+}
+ 
+body.dark .elementosobre {
+    background: linear-gradient(180deg, #04111d, #020c1b);
+    
+     border-top: 5px solid #02cae9;
+    box-shadow: 0 0 15px #02cae9;
+
+    h2{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    img{
+        border:  5px solid white;
+    }
+ 
+    .imagem-controles img{
+        border: none;
+    }
+
+    
+}
+
+
+body.dark .persona {
+    background: linear-gradient(180deg, #04111d, #020c1b);
+       border-top: 5px solid #02cae9;
+    box-shadow: 0 0 15px #02cae9;
+
+    h2{
+        color: white;
+
+    }
+
+    p{
+        color: white;
+    }
+
+    img{
+        border:  5px solid white;
+    }
+}
+
+
+body.dark header {
+    background-color: #08131f;
+      border-bottom:  5px solid #02cae9;
+    box-shadow: 0 0 15px #02cae9;
+    h1{
+        color: white;
+    }
+
+    }
+
+
+    
+
+body.dark nav ul li a {
+color: white;
+    }
+
+
+
+   body.dark nav ul li a:hover {
+    color: #00c3ff;
+}
+
+
+
+
+body.dark footer {
+     background: linear-gradient(180deg, #0b1d3a, #000);
+     border-top: 5px solid #02cae9;
+    box-shadow: 0 0 15px #02cae9;
+}
+
+body.dark .footer-logo h2 {
+    font-size: 22px;
+    color: white;
+}
+
+body.dark .footer-info {
+    text-align: right;
+    font-size: 14px;
+    opacity: 0.8;
+    color: white;
+}
+
+
+
+
+
+
+
+
+body.dark .play-btn {
+    background-color: #02cae9;
+   box-shadow: 0 0 15px #02cae9;
+    color: rgb(0, 0, 0);
+     
+}
+
+body.dark .play-btn:hover{
+   background-color:  #00c3ff;
+}
+
+body.dark .conteudo {
+    border-radius: 15px;
+    border: 5px solid #02cae9;
+    box-shadow: 0 0 15px #02cae9;
+     background: rgba(55, 56, 56, 0.5);
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
+}
+
+
+
+
+
+body.dark #suporte{
+    border-top: 5px solid #02cae9;
+    box-shadow: 0 0 15px #02cae9;
+    background-color: #08131f;
+}
+
+
+
+body.dark #suporte button {
+  background-color: #02cae9;
+   box-shadow: 0 0 15px #02cae9;
+   color: #000;
+  }
+
+  body.dark #suporte h2{
+    color: white;
+  }
+
+  body.dark #suporte input,
+body.dark #suporte textarea {
+  background-color: white; /* quadrado branco */
+  color: black;            /* texto preto */
+}
+
+/* placeholder (Digite seu nome, email...) */
+body.dark #suporte input::placeholder,
+body.dark #suporte textarea::placeholder {
+  color: black;
+}
+
