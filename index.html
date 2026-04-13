@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="logo">
@@ -24,9 +26,10 @@
 
     <nav>
       <ul>
-        <li><a href="#jogar">Jogar</a></li>
+        <li><a href="#jogar">Inicio</a></li>
         <li><a href="#sobreojogo">Sobre o jogo</a></li>
         <li><a href="#persona">Persona</a></li>
+        <li><a href="#variaveis">Informações do Jogo</a></li>
         <li><a href="#suporte">Suporte</a></li>
       </ul>
     </nav>
@@ -38,7 +41,7 @@
     <div class="conteudo">
       <h2>Bem-vindo ao Dream Wings</h2>
       <p>Um menino sonhador que nunca desistiu de voar.</p>
-      <a href="Dream WIngs/index.html" target="_blank" rel="noopener noreferrer" class="play-btn">▶ Jogar</a>
+      <a href="./dream-wings/index.html" target="_blank" class="play-btn">▶ Jogar</a>
     </div>
   </section>
 
@@ -61,7 +64,7 @@
 
     <div class="botaosobre">
       <h2>CLIQUE AQUI PARA</h2>
-      <a href="Dream WIngs/index.html" target="_blank" rel="noopener noreferrer" class="play-btn">▶ Jogar</a>
+      <a href="dream-wings/index.html" target="_blank" rel="noopener noreferrer" class="play-btn">▶ Jogar</a>
     </div>
   </section>
 
@@ -72,7 +75,8 @@
         Gabriel sempre foi apaixonado pelo céu, quando criança, passava horas olhando aviões cruzando as nuvens e
         imaginando como seria estar lá em cima, controlando uma aeronave e viajando pelo mundo.
         <br><br>
-        Seu maior sonho era se tornar piloto de aeronaves, ele lia sobre aviões, assistia vídeos de decolagens e pousos e
+        Seu maior sonho era se tornar piloto de aeronaves, ele lia sobre aviões, assistia vídeos de decolagens e pousos
+        e
         até decorava nomes de modelos e companhias aéreas.
         <br><br>
         Mas Gabriel nasceu com uma deficiência física chamada espinha bífida, que o impediu de atender aos requisitos
@@ -98,9 +102,31 @@
 
     <div class="botaopersona">
       <h2>CLIQUE AQUI PARA</h2>
-      <a href="Dream WIngs/index.html" target="_blank" rel="noopener noreferrer" class="play-btn">▶ Jogar</a>
+      <a href="dream-wings/index.html" target="_blank" rel="noopener noreferrer" class="play-btn">▶ Jogar</a>
     </div>
   </section>
+
+
+  <section id="variaveis" class="variaveis">
+    <div class="texto">
+      <h2>Informações do Jogo</h2>
+
+      <p>Nome do jogo: <span id="nome"></span></p>
+      <p>Gênero Principal: <span id="genero"></span></p>
+      <p>Plataforma: <span id="plataforma"></span></p>
+      <p>Objetivo: <span id="objetivo"></span></p>
+      <p>Tema: <span id="tema"></span></p>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
 
   <section id="suporte">
     <h2>Suporte</h2>
@@ -117,6 +143,10 @@
     </div>
   </section>
 
+
+
+
+
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
@@ -132,6 +162,8 @@
   </footer>
 
   <script>
+    
+    // --- suporte ---
     function mostrarOpcoes() {
       document.getElementById("opcoes-email").style.display = "block";
     }
@@ -144,6 +176,9 @@
       window.location.href = "https://outlook.live.com/mail/0/deeplink/compose?to=suportedreamwings@gmail.com";
     }
 
+
+
+    // --- ano lançamento ---
     const ANO_LANCAMENTO = 2026;
     let anoAtual = new Date().getFullYear();
 
@@ -151,6 +186,9 @@
       alert("NOTÍCIA: Este jogo é um grande lançamento!");
     }
 
+
+
+    // --- verficação de idade e o nome ---
     window.scrollTo(0, 0);
 
     let nome = prompt("Qual é o seu nome?");
@@ -175,6 +213,23 @@
         botao.textContent = "Modo escuro";
       }
     };
+
+
+
+    // --- variaves que o douglas pediu ---
+    const nomeJogo = "Dream Wings";
+    const genJogo = "Endless Runner";
+    const platJogo = "PC";
+    const objJogo = "Desviar dos obstáculos";
+    const temaJogo = "Aviação";
+
+    document.getElementById("nome").innerText = nomeJogo;
+    document.getElementById("genero").innerText = genJogo;
+    document.getElementById("plataforma").innerText = platJogo;
+    document.getElementById("objetivo").innerText = objJogo;
+    document.getElementById("tema").innerText = temaJogo;
+
   </script>
 </body>
+
 </html>
