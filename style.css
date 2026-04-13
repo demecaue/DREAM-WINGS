@@ -1,7 +1,23 @@
-
 * {
-    box-sizing: border-box;
-    scroll-behavior: auto;
+  box-sizing: border-box;
+  scroll-behavior: auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(img/Jato\ de\ combate\ vermelho\ no\ céu.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 110px;
 }
 
 a {
@@ -9,522 +25,331 @@ a {
   color: inherit;
 }
 
-/* começo do header */
+img {
+  max-width: 100%;
+  display: block;
+}
+
 header {
-    background-color: #5fa8d3;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 0px 10px;
-    margin: 0;
-    border: 10px;
-    margin: auto;
-   border-bottom: 5px solid #000566;
-
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-
-
-
-
+  background-color: #5fa8d3;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 0 10px;
+  margin: 0 auto;
+  border-bottom: 5px solid #000566;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-
-
-
-/* LOGO ESQUERDA */
 .logo img {
-    width: 120px;
-
-
+  width: 120px;
 }
 
-/* TÍTULO CENTRAL  */
 .titulo {
-    position: left;
-    padding: 20px;
-    left: 45%;
-    text-align: left;
-    color: #000;
-    margin: 0;
-    font-family: Boldonse;
-    font-size: 45px;
-   
+  padding: 20px;
+  text-align: left;
+  color: #000;
+  margin: 0;
+  font-family: Boldonse, sans-serif;
+  font-size: 45px;
 }
 
-/* MENU DIREITA */
 nav {
-    margin-left: auto;
-
-
-
+  margin-left: auto;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
-
+  margin-left: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 0px;
-    margin: 30px;
-    font-family: Boldonse;
-
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 30px;
+  font-family: Boldonse, sans-serif;
 }
 
-/* SUBLINHADO DOS BOTÕES DO MENU */
 nav ul li a:hover {
-    color: blue;
+  color: blue;
 }
-
-
 
 .logo-titulo {
-  text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-
-/* fim do header */
-
-
-body {
-    background-image: url(img/Jato\ de\ combate\ vermelho\ no\ céu.png);
-    background-size: contain;
-    margin: 0;
-    padding: 0;
-background-color: #ffffff;
-    color: #000000; 
-
-
-
-
+.elementodapagina,
+.elementosobre,
+.persona,
+#suporte {
+  scroll-margin-top: 120px;
 }
 
-
-/*  começo da tela inteira */
 .elementodapagina {
-    height: 100vh;
-    /* ocupa a tela toda */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(255, 255, 255);
-
-
-
-
+  min-height: calc(100vh - 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 40px 20px;
 }
-/* fim da tela inteira */
-
-
-
-
-
-
-/*começo do quadrado*/
 
 .conteudo {
-  background: rgba(55, 56, 56, 0.5);/* fundo escuro transparente */
-    padding: 40px 10px;
-    border-radius: 15px;
-    border: 5px solid #000566;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-
-        h2{
-            font-family:  Boldonse;
-            color: #000;
-        }
-
-
-
-    p {
-        font-family: Bricolage Grotesque;
-        font-size: 15px;
-color: #000;
-    }
-
-
-
+  background: rgba(55, 56, 56, 0.5);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 5px solid #000566;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
 }
-/*fim do quadrado*/
 
+.conteudo h2 {
+  font-family: Boldonse, sans-serif;
+  color: #000;
+  margin-top: 0;
+}
 
+.conteudo p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 15px;
+  color: #000;
+}
 
-
-
-/* começo do botão jogar */
 .play-btn {
-    margin-top: 20px;
-    padding: 20px 50px;
-    font-size: 24px;
-    font-weight: bold;
- background-color: #0b5ed7;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
- 
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-      animation: piscar 1s infinite;
-     color: white;
-
-    
-
-
-
-
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #0b5ed7;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+  animation: piscar 1s infinite;
+  color: black;
+  text-align: center;
 }
 
 @keyframes piscar {
-    0% { opacity: 2; }
-    50% { opacity: 0.5; }
-    100% { opacity: 0,5; }
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
-
-
-/* EFEITO HOVER BOTÃO */
 .play-btn:hover {
-     background-color: #084298;
-    transform: scale(1.1);
-    
+  background-color: #084298;
+  transform: scale(1.1);
 }
-
-/*fim do botão jogar*/
-
-
-
-
-
-
-
-
-
-/*começo do sobre o jogo*/
 
 .elementosobre {
-background-color: #5fa8d3;
-
-    .botaosobre {
-
-
-        margin-top: 20px;
-        padding: 20px 50px;
-        font-size: 24px;
-        font-weight: bold;
-   
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 0.3s;
-
-
-    }
-
-    /* EFEITO HOVER BOTÃO */
-    .play-btn:hover {
-      background-color: #084298;
-    transform: scale(1.1);
-    }
-
-
-
-
-
-
-
-
-
-    h2 {
-        margin: auto;
-        text-align: center;
-        color: black;
-        font-family: Boldonse;
-        font-size: 35px;
-        padding: 10px;
-    }
-
-
-    p {
-
-        border-radius: 10px;
-        font-family: Bricolage Grotesque;
-        padding: 0px 10px;
-        color: black;
-        font-size: 20px;
-        padding: 30px;
-
-   
-    }
-
-    
-.imagem-controles img{
-    width: 70%;
-  text-align: left;
-  
+  background-color: #5fa8d3;
+  display: flex;
+  align-items: flex-start;
+  padding: 135px;
+  justify-content: space-between;
+  text-align: center;
+  border-top: 5px solid #000566;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  gap: 40px;
 }
 
-
-
-
-
-
-
-    .texto {
-        width: 65%;
-    }
-
-    .imagem1 img {
-        width: 300px;
-        border-radius: 10px;
-         border: 5px solid black;
-        margin: 60px 100px;
-        padding: 0px 0px;
-        align-items: top;
-    }
-
-
-    display: flex;
-       align-items: top;
-    padding: 135px;
-    justify-content: space-between;
-  
-    text-align: center;
-      border-top: 5px solid #000566;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    
+.elementosobre .botaosobre {
+  margin-top: 20px;
 }
 
-/*fim do sobre o jogo*/
+.elementosobre h2 {
+  margin: 0 auto 20px;
+  text-align: center;
+  color: black;
+  font-family: Boldonse, sans-serif;
+  font-size: 35px;
+  padding: 10px;
+}
 
+.elementosobre p {
+  border-radius: 10px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: black;
+  font-size: 20px;
+  padding: 30px;
+}
 
+.imagem-controles img {
+  width: 70%;
+  margin: 0 auto;
+}
 
+.elementosobre .texto {
+  width: 65%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*começo do footer*/
+.elementosobre .imagem1 img {
+  width: 300px;
+  border-radius: 10px;
+  border: 5px solid black;
+  margin: 60px 100px;
+  padding: 0;
+}
 
 .footer {
-    width: 100%;
+  width: 100%;
   background-color: #5fa8d3;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 0;
-   border-top: 5px solid #000566;
-
+  color: white;
+  padding: 10px 20px;
+  margin-top: 0;
+  border-top: 5px solid #000566;
 }
 
 .footer-content {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer-logo img {
-    width: 60px;
+  width: 60px;
 }
 
 .footer-logo h2 {
-    font-size: 22px;
-    color: black
+  font-size: 22px;
+  color: black;
+  font-family: Boldonse, sans-serif;
 }
 
 .footer-info {
-    text-align: right;
-    font-size: 14px;
-    opacity: 0.8;
-    color: #000;
+  text-align: right;
+  font-size: 14px;
+  opacity: 0.8;
+  color: #000;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
-
-/*fim do footer*/
-
-
-
-
-/*começo da persona*/
 .persona {
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    padding: 135px;
-    background-color: #5fa8d3;
-    text-align: center;
-
-    border-top: 5px solid #000566;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 135px;
+  background-color: #5fa8d3;
+  text-align: center;
+  border-top: 5px solid #000566;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  gap: 40px;
 }
 
-/* TEXTO (ESQUERDA) */
 .persona .texto {
-    width: 60%;
-    margin-left: -100px;
-    margin-right: 100px;
+  width: 60%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .persona .texto h2 {
-    text-align: left;
-    color: black;
-    font-family: Boldonse;
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-top: -10px;
+  text-align: left;
+  color: black;
+  font-family: Boldonse, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .persona .texto p {
-    text-align: left;
-    font-family: Bricolage Grotesque;
-    color: black;
-    font-size: 20px;
-    line-height: 1.6;
+  text-align: left;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: black;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
-/* IMAGEM (MEIO) */
 .persona .imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .persona .imagem img {
-    width: 480px; /* maior */
-    max-width: 100%;
-    border-radius: 10px;
-    border: 5px solid black;
-    margin: 0 40px;
-    
-    margin-top: 200px;
+  width: 480px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 5px solid black;
+  margin: 0 40px;
+  margin-top: 200px;
 }
 
-/*botao de jogar*/
 .persona .botaopersona {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
 }
 
-/* TEXTO DO BOTÃO */
 .persona .botaopersona h2 {
-    color: black;
-    font-family: Boldonse;
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 200px;
+  color: black;
+  font-family: Boldonse, sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 200px;
 }
 
-/* BOTÃO */
 .persona .play-btn {
-    padding: 20px 50px;
-    font-size: 24px;
-    font-weight: bold;
-
-   
-    color: white;
-
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
- background-color: #0b5ed7;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  color: white;
 }
-
-/* HOVER */
-.persona .play-btn:hover {
-    background-color: #084298;
-    transform: scale(1.1);
-}
-
-
-/*fim da persona*/
-
-
-
-
-
-
-
-
 
 #suporte {
-    
   background-color: #5fa8d3;
-  
   text-align: center;
   color: white;
   margin-bottom: 0;
-  padding-bottom: 20px; /* ajusta se quiser menos espaço */
-border-top: 5px solid #000566;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 40px;
-  
+  padding: 40px 20px 20px;
+  border-top: 5px solid #000566;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 #suporte h2 {
-     font-family: Boldonse;
+  font-family: Boldonse, sans-serif;
   font-size: 32px;
   margin-bottom: 20px;
   color: black;
-  margin-top: 120px
+  margin-top: 120px;
 }
 
-#suporte form {
-    
-  max-width: 500px;
-  margin: 0 auto;
-  
-  
+#suporte form,
+#suporte {
+  max-width: 100%;
 }
 
 #suporte input,
 #suporte textarea {
   width: 100%;
+  max-width: 500px;
   padding: 12px;
   margin-bottom: 15px;
   border: none;
@@ -533,29 +358,22 @@ border-top: 5px solid #000566;
   font-size: 16px;
   background-color: black;
   color: white;
-  
-   
-
 }
-
 
 #suporte input[type="text"],
 #suporte input[type="email"],
 #suporte textarea {
   color: white;
   background-color: black;
-  
 }
 
 #suporte textarea {
-  
   height: 120px;
-  color: white;
-  background-color: black;
 }
 
 #suporte button {
   width: 100%;
+  max-width: 500px;
   padding: 12px;
   background-color: #000566;
   color: white;
@@ -584,30 +402,6 @@ border-top: 5px solid #000566;
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MODO ESCURO*/
 .tema-btn {
   padding: 10px 20px;
   border-radius: 20px;
@@ -623,268 +417,300 @@ border-top: 5px solid #000566;
   transform: scale(1.05);
 }
 
-/* quando estiver no modo escuro */
 body.dark .tema-btn {
   background: #fff;
   color: #000;
-
 }
-
 
 body.dark {
-    background-color: #020c1b;
-    color: white;
-    background-image: url(img/Jato\ vermelho\ no\ céu\ estrelado.png);
+  background-color: #020c1b;
+  color: white;
+  background-image: url(img/Jato\ vermelho\ no\ céu\ estrelado.png);
 }
- 
+
 body.dark .elementosobre {
-    background: linear-gradient(180deg, #04111d, #020c1b);
-    
-     border-top: 5px solid #02cae9;
-    box-shadow: 0 0 15px #02cae9;
-
-    h2{
-        color: white;
-    }
-    p{
-        color: white;
-    }
-    img{
-        border:  5px solid white;
-    }
- 
-    .imagem-controles img{
-        border: none;
-    }
-
-    
+  background: linear-gradient(180deg, #04111d, #020c1b);
+  border-top: 5px solid #02cae9;
+  box-shadow: 0 0 15px #02cae9;
 }
 
+body.dark .elementosobre h2,
+body.dark .elementosobre p {
+  color: white;
+}
+
+body.dark .elementosobre img {
+  border: 5px solid white;
+}
+
+body.dark .elementosobre .imagem-controles img {
+  border: none;
+}
 
 body.dark .persona {
-    background: linear-gradient(180deg, #04111d, #020c1b);
-       border-top: 5px solid #02cae9;
-    box-shadow: 0 0 15px #02cae9;
-
-    h2{
-        color: white;
-
-    }
-
-    p{
-        color: white;
-    }
-
-    img{
-        border:  5px solid white;
-    }
+  background: linear-gradient(180deg, #04111d, #020c1b);
+  border-top: 5px solid #02cae9;
+  box-shadow: 0 0 15px #02cae9;
 }
 
+body.dark .persona h2,
+body.dark .persona p {
+  color: white;
+}
+
+body.dark .persona img {
+  border: 5px solid white;
+}
 
 body.dark header {
-    background-color: #08131f;
-      border-bottom:  5px solid #02cae9;
-    box-shadow: 0 0 15px #02cae9;
-    h1{
-        color: white;
-    }
+  background-color: #08131f;
+  border-bottom: 5px solid #02cae9;
+  box-shadow: 0 0 15px #02cae9;
+}
 
-    }
-
-
-    
+body.dark header h1 {
+  color: white;
+}
 
 body.dark nav ul li a {
-color: white;
-    }
-
-
-
-   body.dark nav ul li a:hover {
-    color: #00c3ff;
+  color: white;
 }
 
-
-
+body.dark nav ul li a:hover {
+  color: #00c3ff;
+}
 
 body.dark footer {
-     background: linear-gradient(180deg, #0b1d3a, #000);
-     border-top: 5px solid #02cae9;
-    box-shadow: 0 0 15px #02cae9;
+  background: linear-gradient(180deg, #0b1d3a, #000);
+  border-top: 5px solid #02cae9;
+  box-shadow: 0 0 15px #02cae9;
 }
 
-body.dark .footer-logo h2 {
-    font-size: 22px;
-    color: white;
-}
-
+body.dark .footer-logo h2,
 body.dark .footer-info {
-    text-align: right;
-    font-size: 14px;
-    opacity: 0.8;
-    color: white;
+  color: white;
 }
-
-
-
-
-
-
-
 
 body.dark .play-btn {
-    background-color: #02cae9;
-   box-shadow: 0 0 15px #02cae9;
-    color: rgb(0, 0, 0);
-     
+  background-color: #02cae9;
+  box-shadow: 0 0 15px #02cae9;
+  color: rgb(0, 0, 0);
 }
 
-body.dark .play-btn:hover{
-   background-color:  #00c3ff;
+body.dark .play-btn:hover {
+  background-color: #00c3ff;
 }
 
 body.dark .conteudo {
-    border-radius: 15px;
-    border: 5px solid #02cae9;
-    box-shadow: 0 0 15px #02cae9;
-     background: rgba(55, 56, 56, 0.5);
-h2{
-    color: white;
+  border-radius: 15px;
+  border: 5px solid #02cae9;
+  box-shadow: 0 0 15px #02cae9;
+  background: rgba(55, 56, 56, 0.5);
 }
 
-p{
-    color: white;
-}
-}
-
-
-
-
-
-body.dark #suporte{
-    border-top: 5px solid #02cae9;
-    box-shadow: 0 0 15px #02cae9;
-    background-color: #08131f;
+body.dark .conteudo h2,
+body.dark .conteudo p {
+  color: white;
 }
 
-
+body.dark #suporte {
+  border-top: 5px solid #02cae9;
+  box-shadow: 0 0 15px #02cae9;
+  background-color: #08131f;
+}
 
 body.dark #suporte button {
   background-color: #02cae9;
-   box-shadow: 0 0 15px #02cae9;
-   color: #000;
-  }
-
-  body.dark #suporte h2{
-    color: white;
-  }
-
-  body.dark #suporte input,
-body.dark #suporte textarea {
-  background-color: white; /* quadrado branco */
-  color: black;            /* texto preto */
+  box-shadow: 0 0 15px #02cae9;
+  color: #000;
 }
 
-/* placeholder (Digite seu nome, email...) */
+body.dark #suporte h2 {
+  color: white;
+}
+
+body.dark #suporte input,
+body.dark #suporte textarea {
+  background-color: white;
+  color: black;
+}
+
 body.dark #suporte input::placeholder,
 body.dark #suporte textarea::placeholder {
   color: black;
 }
 
-
-
-
 @media (max-width: 768px) {
+  body {
+    padding-top: 180px;
+    background-size: cover;
+    background-position: center;
+  }
 
-  /* HEADER */
   header {
     flex-direction: column;
     padding: 10px;
     text-align: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 90px;
+    margin: 0 auto;
+  }
+
+  .logo-titulo {
+    justify-content: center;
   }
 
   .titulo {
-    font-size: 25px;
-    padding: 10px;
+    font-size: 24px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  nav {
+    margin-left: 0;
+    width: 100%;
   }
 
   nav ul {
     flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 0;
   }
 
-  /* TELA INICIAL */
+  nav ul li a {
+    margin: 0;
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
+  }
+
+  .tema-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
   .elementodapagina {
     padding: 20px;
-    height: auto;
+    min-height: auto;
   }
 
   .conteudo {
     padding: 20px;
   }
 
-  /* SOBRE O JOGO */
+  .conteudo h2 {
+    font-size: 22px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+  }
+
+  .play-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 20px;
+    font-size: 18px;
+  }
+
   .elementosobre {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    align-items: center;
+    gap: 20px;
   }
 
-  .elementosobre .texto {
+  .elementosobre .texto,
+  .elementosobre .botaosobre {
     width: 100%;
   }
 
-  .imagem1 img {
+  .elementosobre h2 {
+    font-size: 24px;
+  }
+
+  .elementosobre p {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .elementosobre .imagem1 img {
     width: 100%;
-    margin: 20px 0;
+    max-width: 320px;
+    margin: 20px auto 0;
   }
 
   .imagem-controles img {
     width: 100%;
+    max-width: 320px;
   }
 
-  /* PERSONA */
   .persona {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 50px 20px;
     align-items: center;
+    gap: 20px;
   }
 
-  .persona .texto {
+  .persona .texto,
+  .persona .imagem,
+  .persona .botaopersona {
     width: 100%;
     margin: 0;
+  }
+
+  .persona .texto h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .persona .texto p {
+    font-size: 16px;
+    text-align: left;
   }
 
   .persona .imagem img {
     width: 100%;
-    margin: 20px 0;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
-  .persona .botaopersona {
-    margin: 0;
+  .persona .botaopersona h2 {
+    margin-top: 0;
+    font-size: 24px;
   }
 
-  /* SUPORTE */
   #suporte {
-    padding: 40px 20px;
+    padding: 50px 20px 20px;
+  }
+
+  #suporte h2 {
+    margin-top: 0;
+    font-size: 24px;
   }
 
   #suporte input,
-  #suporte textarea {
+  #suporte textarea,
+  #suporte button {
+    max-width: 100%;
     font-size: 14px;
   }
 
-  /* FOOTER */
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: 10px;
   }
 
   .footer-info {
     text-align: center;
     margin-top: 10px;
   }
-
 }
